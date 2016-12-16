@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Anurag|Harish - Node Ninjas">
+    <meta name="keyword" content="NodeJs,Nunjucks,Express,Bootstrap 4,Bower,Npm">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>eLearnCMS</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    {% block styles %}{% endblock %}
+</head>
+
+<body class="navbar-fixed sidebar-nav fixed-nav">
+    <header class="navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler mobile-toggler hidden-lg-up" type="button">☰</button>
+            <a class="navbar-brand" href="#"></a>
+            <ul class="nav navbar-nav hidden-md-down">
+                <li class="nav-item">
+                    <a class="nav-link navbar-toggler layout-toggler" href="#">☰</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <nav class="sidebar-nav">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard <span class="tag tag-info">NEW</span></a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer">
+        <span class="text-left">
+            <a href="http://englishlearningonline.com">English Learning Online</a> © 2017.
+        </span>
+        <span class="float-xs-right">
+            Powered by <a href="http://1neclick.com">1neClick Team</a>
+        </span>
+    </footer>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/pace/pace.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
