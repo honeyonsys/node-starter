@@ -14,7 +14,7 @@ nunjucks.configure('./views', {
 var routes = require("./routes")(app);
 
 // Assets Path
-app.use(express.static(path.join(__dirname, '/assets')));
+app.use(express.static(path.join(__dirname, './')));
 
 // Server Connection
 var port = 3000;

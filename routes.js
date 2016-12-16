@@ -9,7 +9,9 @@ module.exports = function (app) {
     });
 
     app.get('/', function (req, res) {
-        res.render('./frontend/index.njk');
+        res.render('./frontend/index.njk',{
+            title: 'This is the Starter Page'
+        });
     });
 
 };
